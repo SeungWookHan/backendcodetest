@@ -43,6 +43,7 @@
 - install the dependencies. `npm install`
 - run `cp .env.example .env`
 - run `docker compose up --build`
+- API Endpoint: `/v1/buses`
 
 ### .env 값 예시
 
