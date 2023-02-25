@@ -1,0 +1,28 @@
+{
+  "ts-node": { "files": true },
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["es2017"],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "allowJs": true,
+    "noImplicitAny": false,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "tests"]
+}
