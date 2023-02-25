@@ -12,7 +12,7 @@ route.get("/test", async (req: Request, res: Response) => {
   return res.status(200).send("This is test response");
 });
 
-route.get("/buses", async (req: Request, res: Response, next: NextFunction) => {
+route.get("", async (req: Request, res: Response, next: NextFunction) => {
   const logger: Logger = Container.get("logger");
   logger.debug("Calling /buses endpoint to get busInfo");
   try {
