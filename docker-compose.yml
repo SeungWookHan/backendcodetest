@@ -9,6 +9,8 @@ services:
       - ./:/app:rw
       - /app/node_modules
       - /app/dist
+    ports:
+      - ${PORT}:${PORT}
     logging:
       driver: "json-file"
       options:
