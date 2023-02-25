@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  bus-service:
+    build: .
+    environment:
+      - PORT=${PORT}
+      - ACCESS_KEY=${ACCESS_KEY} # for bus api
+    volumes:
+      - ./:/app:rw
+      - /app/node_modules
+      - /app/dist
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
