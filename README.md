@@ -4,6 +4,8 @@
 - 위 3개의 노선 중 5분 이내에 도착 예정인 버스가 가장 많은 버스 정류장 3곳을 추출
 - 도착 시간이 가장 빠른 순으로 버스 번호, 번호판, 도착 예정 시간을 정렬하여 응답
 
+<br><br>
+
 ## 질문에 대한 답변
 
 ### In which point, did you feel hard?
@@ -53,6 +55,13 @@ ACCESS_KEY=OXiu4F8tgkpvsTh40ub2V0hG~~ # 공공 버스 API Service Key
 
 ## 설계
 
+### 활용 API
+
+> 참고: https://www.data.go.kr/index.do
+
+- 서울특별시\_노선정보 조회 서비스
+- 서울특별시\_버스도착정보조회 서비스
+
 <br>
 
 ### 파일 구조
@@ -78,8 +87,6 @@ ACCESS_KEY=OXiu4F8tgkpvsTh40ub2V0hG~~ # 공공 버스 API Service Key
 <br>
 
 ## 개발 정보
-
-<br>
 
 ### 개발환경 정보
 
